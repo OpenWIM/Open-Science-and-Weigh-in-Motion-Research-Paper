@@ -29,7 +29,7 @@ The first and the fourth paragraph are repeated.
 
 **Theme**
 
-4. WIM data quality, management, and use
+4 - WIM data quality, management, and use
 
 **Decision of the Scientific Committee**
 
