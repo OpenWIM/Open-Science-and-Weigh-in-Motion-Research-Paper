@@ -84,11 +84,11 @@
 \clearpage\setcounter{page}{1}\pagestyle{Standard}
 {\centering\selectlanguage{english}\bfseries
 OpenWIM - Open Science and Weigh-in-Motion Research
-\par}
-
 \footnote{
 $\copyright$ 2016, GOLTSMAN, Helio and OGASSAVARA, Ivan. Licensed under the Creative Commons Attribution 4.0 license, http://creativecommons.org/licenses/by/4.0/
 }
+\par}
+
 
 \bigskip
 
@@ -102,7 +102,7 @@ $\copyright$ 2016, GOLTSMAN, Helio and OGASSAVARA, Ivan. Licensed under the Crea
 
 \includegraphics[width=2.619cm,height=3.307cm]{openwim-img/openwim-img2.jpg}
  &
-\selectlanguage{english} Engineer researcher graduated from PUC-RJ, specialized in urban transportation planning by \ textit {Massachusetts Institute of Technology - MIT}. It was also one of the pioneers of the weighing area of heavy vehicles in Brazil, working since 1974 on this issue.\\
+\selectlanguage{english} Engineer researcher graduated from PUC-RJ, specialized in urban transportation planning by Massachusetts Institute of Technology - MIT. He was also one of the pioneers of the weighing area of heavy vehicles in Brazil, working since 1974 on this issue.\\
 \multicolumn{2}{m{7.951cm}}{\centering
 {\selectlanguage{english}\bfseries Ivan Ogassavara}\par
 
@@ -124,12 +124,12 @@ $\copyright$ 2016, GOLTSMAN, Helio and OGASSAVARA, Ivan. Licensed under the Crea
 \bigskip
 
 {\selectlanguage{english}\bfseries
-Abstract}
+Abstract
+}
 
 {\selectlanguage{english}
 
 Abstract ...
-
 }
 
 
@@ -158,6 +158,7 @@ Resumo...
 \textstyletablecaptionCar{\foreignlanguage{portuguese}{Palavras-Chaves:}}\foreignlanguage{portuguese}{
 Veículos Pesados, Pesagem em Movimento, WIM, Ciência Aberta, Dados Abertos, Reprodutibilidade}}
 
+\newpage
 \section{Introduction}
 {\selectlanguage{english}
 
@@ -172,7 +173,7 @@ The structure of this project was designed over some pillars:
 \item Standards;
 \item Open Data;
 \item Open Source;
-\item Open Access.
+\item Open Access;
 \item Reproducibility;
 \end{itemize}
 
@@ -198,7 +199,75 @@ The Open Access pillar is based on paper publishing on open repositories. This c
 
 The Reproducibility pillar is achieved through open access, open data and open source. To share code, explain and describe the methods, in a reproducible way, a \textit{notebook science} tool can be used. With that, the researchers can write texts, including texts with LaTeX format and algorithms; open data files; plot charts; display tables; show images; etc. Jupyter Notebooks, the most famous notebook science tool, can be used with some famous programming languages like Python, Julia, Octave, Bash, Scheme, etc.
 
-This paper will shows the idea of the OpenWIM project and its potential benefits.
+This paper will show the idea of the OpenWIM project and its potential benefits.
+
+\section{Open Science}\label{open-science}
+Access to the academic literature (open access), data sharing (open data), and algorithms sharing (open source) are the kernel of the open science (or open research) concept \cite{article:the-open-research-value-proposition}.
+
+The open science practices conduct the research to be more transparent \cite{dorch2015open}
+
+The Open Access is a key to occur the Open Science \cite{margoni2016open}.
+
+A very important governmental open science initiative is the Open Science and Research Initiative from Finland \cite{olsbo2015roadmap}
+
+\section{OpenWIM Project}\label{open-wim}
+
+The OpenWIM Project intend to be a central repository for data, algorithms and research. Its primaries objectives are:
+
+\begin{itemize}
+\item discussing and definition of format standards;
+\item discussing and definition of open repositories;
+\item offer a single point to be sharing data, code and research;
+\item offer a central communication channel to discuss about WIM theme;
+\item offer a social media communication to announce new and updated releases into the repository.
+\end{itemize}
+
+Standard formats is important to allow reusability of algorithms and data, consequently, that can expand the range of tests and experiments.
+
+The repository choice is not trivial, is important know what tools are available and the number of users that know that platform. This can facilitate new researchers to contribute to the project.
+
+Maybe more than one repository should be used, some repositories is specialized in:
+
+\begin{itemize}
+\item algorithms (i.e. GitHub\footnote{http://github.com});
+\item data (i.e. Dataverse\footnote{https://dataverse.harvard.edu/});
+\item images (i.e. figshare\footnote{https://figshare.com/});
+\item research (i.e. Open Science Framework\footnote{https://osf.io}).
+\end{itemize}
+
+The scientific knowledge communication starting since the first phase of the scientific process, like the problem identification, until the other scientists have read the final paper \cite{leite2007scientific}.
+
+The OpenWIM concept absorb a lot of the \textit{International Society for Weigh in Motion\footnote{http://www.is-wim.org/index.php?nm=0$\&$nsm=1$\&$lg=en}}
+
+\subsection{Standards}\label{standards}
+
+The Weigh-in-Motion (WIM) Systems can collect data from different kind of devices, like Automatic License Plate Recognition (ALPR), weigh sensors (piezoelectric quartz, piezoelectric ceramic, piezoelectric polymer, etc), temperature sensors, etc. So, the WIM Systems can produce a variety kind of data, like:
+
+\begin{itemize}
+\item raw sensors data;
+\item estimated data, like speed, gross vehicle weight, axles weight, axles group weight, distance between axles, vehicle classification, etc;
+\item environment data, like temperature, humidity, traffic condition, etc;
+\item statistic data, like relative errors, etc.
+\end{itemize}
+
+In the literatures have some papers about data standards recommendations about data storage, processing, transmission and standard format \cite{tech:cost-323}, \cite{enright2011cleaning}, \cite{qu1997traffic}, \cite{elkins2008development}. These literatures can be used as the initial proposition to the data standards.
+
+Additionally, some proceedings to clean the data are recommend before analysis stage \cite{elkins2008development}, \cite{enright2011cleaning}.
+
+
+\subsection{Repositories}\label{repositories}
+
+The main papers' index	about weigh-in-motion is the \textit{International Society for Weigh in Motion \footnote{http://www.is-wim.org/index.php?nm=3$\&$lg=en}} (IS-WIM).
+
+Although IS-WIM is the main internet channel about WIM research, some paper is not presented there. Some paper or documents listed there can be linked to another web sites, and so, some document could have a broken link. 
+
+Another issue found is about open access of the publications. Not all papers are published with some open access license.
+
+But some papers are licensed by a creative common license (i.e. some papers from University College Dublin Library).
+
+\subsection{Dissemination}\label{dissemination}
+
+\section{Discussion}\label{discussion}
 
 \begin{small}
 \renewcommand{\bibname}{References}
