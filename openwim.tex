@@ -164,7 +164,7 @@ Veículos Pesados, Pesagem em Movimento, WIM, Ciência Aberta, Dados Abertos, Re
 
 Overweight heavy vehicles represent a problem related to accidents and pavement damage. The weight enforcement is very important to inhibit the overweight of these vehicles. One method that is being investigated in many parts of the world is weigh-in-motion (WIM), which has the advantage of reduced physical space required and operating with lower costs. Since the sensors can be installed on the road itself, the vehicles can be weigh without them having to slow down, hence, not delaying the road user’s journey.
 
-Although there are many papers publicly available about weigh-in-motion, a little bit researchers publish their sources and data, which can allow a better reproduction of their experiments and results. In this context, the Open Science concept can help improve the WIM research through collaborative efforts and reproducible methods, using algorithms and data with open access.
+Although there are many papers publicly available about weigh-in-motion, a little bit researchers publish their sources and data, which can allow a better reproduction of their experiments and results. In this context, the Open Science concept can help improve the WIM research through collaborative efforts and reproducible methods, using algorithms and data with open access \cite{garvin2008yours}.
 
 The OpenWIM project was born upon this background as an open science initiative, to provide a WIM researchers a repository with initial structure that can then be converted into a framework for researchers to develop and test new methods and technologies.
 
@@ -237,9 +237,22 @@ Maybe more than one repository should be used, some repositories is specialized 
 
 The scientific knowledge communication starting since the first phase of the scientific process, like the problem identification, until the other scientists have read the final paper \cite{leite2007scientific}.
 
-The OpenWIM concept absorb a lot of the \textit{International Society for Weigh in Motion\footnote{http://www.is-wim.org/index.php?nm=0$\&$nsm=1$\&$lg=en}}
+The OpenWIM concept absorb a lot of the \textit{International Society for Weigh in Motion\footnote{http://www.is-wim.org/index.php?nm=0$\&$nsm=1$\&$lg=en}} purpouses.
+
+The OpenWIM need to be supported by a platform that help the research workflows and allow storage and publishing of research products (like papers, data, code, images, etc) during all phases of the research life-cycle. One very interesting one is \textit{Open Science Framework\footnote{https://osf.io} (OSF)}.
 
 \subsection{Standards}\label{standards}
+
+In the literatures have some papers about data standards recommendations about data storage, processing, transmission and standard format \cite{tech:cost-323}, \cite{enright2011cleaning}, \cite{qu1997traffic}, \cite{elkins2008development}. These literatures can be used as the initial proposition to the OpenWIM Standards.
+
+The standards of code and data can help to integrate research products produced by different researchers and can be used to build a framework to test and evaluate models and methods.
+
+Specific some standard data format and layout not imply that all researchers need to define his data using these definition, but to share and reuse data with a default format and structure can increase the range of tests and data reuse into other research \cite{assante2015science}.
+
+In OpenWIM project can be stored source written in any language (open language), but some one that can be used as default. This can help to focus some efforts related to Information and Communication Technology (ICT) dissemination. Because Python language has many argues to be used as a language to write scientific algorithms, that may be used as a default language \cite{ayer2014scientists}. Of course, that not imply that other algorithms wrote in other language (like C, C++, Octave, etc.) can be shared into OpenWIM Structure.
+
+
+\subsection{Open Data}\label{open-Data}
 
 The Weigh-in-Motion (WIM) Systems can collect data from different kind of devices, like Automatic License Plate Recognition (ALPR), weigh sensors (piezoelectric quartz, piezoelectric ceramic, piezoelectric polymer, etc), temperature sensors, etc. So, the WIM Systems can produce a variety kind of data, like:
 
@@ -250,23 +263,39 @@ The Weigh-in-Motion (WIM) Systems can collect data from different kind of device
 \item statistic data, like relative errors, etc.
 \end{itemize}
 
-In the literatures have some papers about data standards recommendations about data storage, processing, transmission and standard format \cite{tech:cost-323}, \cite{enright2011cleaning}, \cite{qu1997traffic}, \cite{elkins2008development}. These literatures can be used as the initial proposition to the data standards.
-
 Additionally, some proceedings to clean the data are recommend before analysis stage \cite{elkins2008development}, \cite{enright2011cleaning}.
 
+\subsection{Open Source}\label{open-source}
 
-\subsection{Repositories}\label{repositories}
+Know some programming language is an important skill for researchers \cite{ayer2014scientists}. The algorithms play a very important role in research development. That allow some processes that if done manually would be impossible in reasonable time.
 
-The main papers' index	about weigh-in-motion is at localized at the \textit{International Society for Weigh in Motion \footnote{http://www.is-wim.org/index.php?nm=3$\&$lg=en}} (IS-WIM) web site. Although, some important papers are not presented there. Some papers are stored in IS-WIM server but other papers or documents not, and so, some document could have a broken link there. 
+In the last few year some digital repositories were available in internet to publish algorithms (general files too) and become famous with a lot of users. These platforms generally have a lot of tools and supports like version control system, communication channel, access control, third-party integration, etc.
 
-The OpenWIM need to be supported by a platform that help the research workflows and allow storage and publishing of research products like papers, data, code, images, etc. One very interesting one is \textit{Open Science Framework\footnote{https://osf.io} (OSF)}.
+Some of the most famous repositories are GitHub\footnote{https://github.com}, GitLab \footnote{https://gitlab.com} and Bitbucket \footnote{https://bitbucket.org}. For example, in GitHub platform there are 14 million people collaborating right now across 35 million repositories on GitHub (https://github.com/about/press, accessed at March 2016).
+ 
+\subsection{Open Access}\label{open-access}
 
-One of the main idea behind the use of open science communication (publishing of all kind of research products during all phases of the research life-cycle) is maximize research reuse and reduce their costs \cite{assante2015science}.
+The main papers' index	about weigh-in-motion is located at the \textit{International Society for Weigh in Motion \footnote{http://www.is-wim.org/index.php?nm=3$\&$lg=en}} (IS-WIM) web site. Although, some important papers are not presented there. Some papers are stored in IS-WIM server but other papers or documents not, and so, some document could have a broken link there because the target link can change the address without any notification. 
+
+One of the main idea behind the use of open science communication is to maximize research reuse and reduce their costs \cite{assante2015science}.
 
 
-\subsection{Dissemination}\label{dissemination}
 
 \section{Discussion}\label{discussion}
+
+At this moment, any study about the applicability of open science concepts into weigh-in-motion research can be found into literatures, so we don't have any information about differences about traditional research and open research in weigh-in-motion field. Although, it is very important some initiatives like:
+
+\begin{itemize}
+\item disseminate the importance of open science methodology in weigh-in-motion field;
+\item disseminate information communication technology;
+\item define some repositories and open journals to be recommended;
+\item define some standards to data and code;
+\end{itemize}
+
+The \textit{Open Science Framework (OSF)} can provide a lot of tools and help researchers in their in workflows. Additionally, OSF can provide integrations with a variety of tools and platforms used by researchers and system developers.
+
+When more researchers understand the benefits about the use of open science methodology its use will be more frequent and it can be set as a default methodology in financial funder requirements.
+
 
 \begin{small}
 \renewcommand{\bibname}{References}
