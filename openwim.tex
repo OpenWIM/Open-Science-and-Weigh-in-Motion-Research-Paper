@@ -173,13 +173,15 @@ The structure of this project was designed over some pillars:
 \item Standards;
 \item Open Data;
 \item Open Source;
-\item Open Access;
+\item Open Access (OA);
 \item Reproducibility;
 \end{itemize}
 
-The Standards pillar is based on a recompilation of standards found in the international literatures used in WIM projects. This can be a guideline to new researchers to structure their projects and can facilitate sharing data and algorithms. This standards can be about the file names, layout data structure, file format used in system integration, standard units, column name standard (in data files), algorithms style code, etc.
+Standard definitions are an important key for data and code sharing. That a should be based on the standards found in the international literatures used in WIM projects / research. This can be a guideline to new researchers to structure their projects. These standards can be about the file names, layout data structure, file format used in system integration, standard units, column name standard (in data files), algorithms style code, etc.
 
-The Open Data pillar is based on a open repository where Weigh-in-Motion data is published. This data can be:
+In open science concept all research products (like data, code, image, etc.) may be published.
+
+After established initial standards for data, either input as output, some open repositories may be defined to publish data produced in WIM research. These data can be:
 
 \begin{itemize}
 \item raw data from weigh sensors;
@@ -193,9 +195,11 @@ The Open Data pillar is based on a open repository where Weigh-in-Motion data is
 
 The raw data from sensors and the weight information is very important to validate weigh and calibration methods. Raw data from inductive loop can help in methods like vehicle classification. The license plate images can help to test or improve methods that recognizes the license plate position and value.
 
-The Open Source pillar is based on a repository for researchers publish his algorithms used in their research. This algorithms with a test dataset (open data) can help others in their research that allows more alternatives in their experiments. Other important key about this pillar is the informal peer-review because when other researchers can test some algorithms they can find some problem or exception or just can give some feedback.
+After established initial standards for algorithms, some open repositories may be defined to publish code produced in WIM research. 
 
-The Open Access pillar is based on paper publishing on open repositories. This concept can allow a collaborative environment for researchers of all parts of the world to work and can increase paper citation.
+These research products can be reused in another research and can be cited there (according to the license used).
+
+Digital technologies create a access revolution in scientific communication \cite{suber2012open}.
 
 The Reproducibility pillar is achieved through open access, open data and open source. To share code, explain and describe the methods, in a reproducible way, a \textit{notebook science} tool can be used. With that, the researchers can write texts, including texts with LaTeX format and algorithms; open data files; plot charts; display tables; show images; etc. Jupyter Notebooks, the most famous notebook science tool, can be used with some famous programming languages like Python, Julia, Octave, Bash, Scheme, etc.
 
@@ -204,6 +208,8 @@ This paper will show the idea of the OpenWIM project and its potential benefits.
 \section{Open Science}\label{open-science}
 
 Access to the academic literature (open access), data sharing (open data), and algorithms sharing (open source) are the kernel of the open science (or open research) concept \cite{article:the-open-research-value-proposition}. The open science practices conduct the research to be more transparent \cite{dorch2015open} and the Open Access is a key to occur the Open Science \cite{margoni2016open}.
+
+Open science is not a new culture, indeed it is just a different methodological research, comparing to traditional methodological research \cite{assante2015science}.
 
 In the literatures is presented a variety of benefits provided by the usage of open science practices \cite{article:the-open-research-value-proposition}:
 
@@ -252,6 +258,8 @@ The OpenWIM concept absorb a lot of the \textit{International Society for Weigh 
 The OpenWIM need to be supported by a platform that help the research workflows and allow storage and publishing of research products (like papers, data, code, images, etc) during all phases of the research life-cycle. One very interesting one is \textit{Open Science Framework\footnote{https://osf.io} (OSF)}.
 
 \subsection{Standards}\label{standards}
+
+The first step to promote sharing research products, like data and algorithms or code, is defining standards.
 
 In the literatures have some papers about data standards recommendations about data storage, processing, transmission and standard format \cite{tech:cost-323, enright2011cleaning, qu1997traffic, elkins2008development}. These literatures can be used as the initial proposition to the OpenWIM Standards.
 
