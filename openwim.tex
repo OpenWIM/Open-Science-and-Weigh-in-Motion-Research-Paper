@@ -177,39 +177,22 @@ The structure of this project was designed over some pillars:
 \item Reproducibility;
 \end{itemize}
 
-Standard definitions are an important key for data and code sharing. That a should be based on the standards found in the international literatures used in WIM projects / research. This can be a guideline to new researchers to structure their projects. These standards can be about the file names, layout data structure, file format used in system integration, standard units, column name standard (in data files), algorithms style code, etc.
+All these concepts are connected. Standards increase the reusability of data and source code. Data, code and research literature sharing increase the chances of better experiment reproducibility. That research communication workflow, based on Open Science concepts, can provide a variety of benefits for researchers \cite{article:the-open-research-value-proposition}.
 
-In open science concept all research products (like data, code, image, etc.) may be published.
+In this paper will be presented the main idea about Open Science, the OpenWIM project structure and their main potential benefits .
 
-After established initial standards for data, either input as output, some open repositories may be defined to publish data produced in WIM research. These data can be:
-
-\begin{itemize}
-\item raw data from weigh sensors;
-\item raw data from inductive loop;
-\item known information about the vehicle run (gross vehicle weight, speed, distance between axles, weight in each axle, vehicle category, temperature, etc.);
-\item vehicle category patterns;
-\item calibration data;
-\item license plate images;
-\item vehicle images;
-\end{itemize}
-
-The raw data from sensors and the weight information is very important to validate weigh and calibration methods. Raw data from inductive loop can help in methods like vehicle classification. The license plate images can help to test or improve methods that recognizes the license plate position and value.
 
 After established initial standards for algorithms, some open repositories may be defined to publish code produced in WIM research. 
 
-These research products can be reused in another research and can be cited there (according to the license used).
-
-Digital technologies create a access revolution in scientific communication \cite{suber2012open}.
-
 The Reproducibility pillar is achieved through open access, open data and open source. To share code, explain and describe the methods, in a reproducible way, a \textit{notebook science} tool can be used. With that, the researchers can write texts, including texts with LaTeX format and algorithms; open data files; plot charts; display tables; show images; etc. Jupyter Notebooks, the most famous notebook science tool, can be used with some famous programming languages like Python, Julia, Octave, Bash, Scheme, etc.
-
-This paper will show the idea of the OpenWIM project and its potential benefits.
 
 \section{Open Science}\label{open-science}
 
-Access to the academic literature (open access), data sharing (open data), and algorithms sharing (open source) are the kernel of the open science (or open research) concept \cite{article:the-open-research-value-proposition}. The open science practices conduct the research to be more transparent \cite{dorch2015open} and the Open Access is a key to occur the Open Science \cite{margoni2016open}.
+Access to the academic literature (Open Access), data sharing (Open Data), and algorithms sharing (Open Source) are the kernel of the open science (or Open Research) concept \cite{article:the-open-research-value-proposition}. The open science practices conduct the research to be more transparent \cite{dorch2015open} and the Open Access (OA) is a key to occur the Open Science \cite{margoni2016open}.
 
-Open science is not a new culture, indeed it is just a different methodological research, comparing to traditional methodological research \cite{assante2015science}.
+% Open Science is not a new culture, indeed it is just a different methodological research, comparing to traditional methodological research \cite{assante2015science}.
+
+In open science concept all research products (like data, code, image, etc.) may be published and, consequently, that can be reused and cited in another research (according to the license used).
 
 In the literatures is presented a variety of benefits provided by the usage of open science practices \cite{article:the-open-research-value-proposition}:
 
@@ -219,10 +202,14 @@ In the literatures is presented a variety of benefits provided by the usage of o
 \item reviews of higher quality;
 \item paper publishing can cost less;
 \item more often, funders are not only suggesting but mandating open research;
-\item control the article reuse by choose the appropriate license (like Creative Common\footnote{https://creativecommons.org/licenses/})
+\item control the article reuse by choose the appropriate license (like Creative Common\footnote{https://creativecommons.org/licenses/}), etc.
 \end{itemize}
 
+
+
 In the present, some government, universities and funders initiatives encourage the use of open practices, in some cases, these practices are required \cite{article:the-open-research-value-proposition}.
+
+Digital technologies create a access revolution in scientific communication \cite{suber2012open}.
 
 Research reproducibility is not a trivial task. \cite{open2015estimating}	
 
@@ -259,7 +246,7 @@ The OpenWIM need to be supported by a platform that help the research workflows 
 
 \subsection{Standards}\label{standards}
 
-The first step to promote sharing research products, like data and algorithms or code, is defining standards.
+Standard definitions are an important key for data and code sharing, because allow more reusability of of the research products. The international literatures used in WIM projects / research may be used to theses initial proposition and can be a guideline to new researchers to structure their projects. These definitions can be about the file names, layout data structure, file format used in system integration, standard units, column name standard (in data files), algorithms style code, etc. Other data and code standards research, from another fields, can be used to support technology definitions.
 
 In the literatures have some papers about data standards recommendations about data storage, processing, transmission and standard format \cite{tech:cost-323, enright2011cleaning, qu1997traffic, elkins2008development}. These literatures can be used as the initial proposition to the OpenWIM Standards.
 
@@ -272,10 +259,20 @@ In OpenWIM project can be stored source written in any language (open language),
 
 \subsection{Open Data}\label{open-Data}
 
+After established initial standards for data, either input as output, some open repositories may be defined to publish data produced in WIM research. These data can be:
+
+The raw data from sensors and the weight information is very important to validate weigh and calibration methods. Raw data from inductive loop can help in methods like vehicle classification. The license plate images can help to test or improve methods that recognizes the license plate position and value.
+
 The Weigh-in-Motion (WIM) Systems can collect data from different kind of devices, like Automatic License Plate Recognition (ALPR), weigh sensors (piezoelectric quartz, piezoelectric ceramic, piezoelectric polymer, etc), temperature sensors, etc. So, the WIM Systems can produce a variety kind of data, like:
 
 \begin{itemize}
-\item raw sensors data;
+\item raw data from weigh sensors;
+\item raw data from inductive loop;
+\item known information about the vehicle run (gross vehicle weight, speed, distance between axles, weight in each axle, vehicle category, temperature, etc.);
+\item vehicle category patterns;
+\item calibration data;
+\item license plate images;
+\item vehicle images, etc.
 \item estimated data, like speed, gross vehicle weight, axles weight, axles group weight, distance between axles, vehicle classification, etc;
 \item environment data, like temperature, humidity, traffic condition, etc;
 \item statistic data, like relative errors, etc.
